@@ -1,3 +1,5 @@
+// Creating a vending machine to
+
 #include <iostream>
 #include <math.h>
 #include <string>
@@ -11,14 +13,11 @@ struct val {
 };
 
 struct money {
-	const double PENNIES = 0.01;
 	const double NICKELS = 0.05;
 	const double DIMES = 0.10;
 	const double QUARTERS = 0.25;
 	const double ONES = 1.00;
 	const double FIVES = 5.00;
-	const double TENS = 10.00;
-	const double TWENTIES = 20.00;
 };
 
 //Function Prototypes
@@ -29,7 +28,6 @@ void check_inventory(map<string, val>);
 std::map<string, val> refill_inventory(map<string, val>);
 string select_product();
 int coin_count();
-
 
 int main() {
 	//initializers
